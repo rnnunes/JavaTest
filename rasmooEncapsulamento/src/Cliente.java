@@ -7,6 +7,16 @@ public class Cliente {
     private int cpf;
     private double salario;
 
+    //construtor
+    public Cliente() {
+
+    }
+
+    public Cliente(String nome, int cpf) {
+        this.nome = nome;
+        this.cpf = cpf;
+    }
+
     //encapsulamento-:Getters-Setters
 
     public String getNome() {

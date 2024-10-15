@@ -6,6 +6,7 @@ public class Conta {
         private int id_conta;
         private Cliente titular;
         private double saldo;
+        private static int total;
 
         //contrutores
         public Conta () {
@@ -16,6 +17,8 @@ public class Conta {
                 this.agencia = agencia;
                 this.id_conta = id_conta;
                 this.titular = titular;
+                Conta.total++;
+
         }
 
         //metodos da classe
@@ -72,6 +75,10 @@ public class Conta {
 
         public double getSaldo() {
                 return this.saldo;
+        }
+
+        public static int getTotal() {
+                return Conta.total;
         }
 
 }
