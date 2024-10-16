@@ -14,7 +14,6 @@ public class Cliente {
 
     public Cliente(String nome, int cpf) {
         this.nome = nome;
-        this.cpf = cpf;
     }
 
     //encapsulamento-:Getters-Setters
