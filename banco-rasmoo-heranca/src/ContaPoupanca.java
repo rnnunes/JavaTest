@@ -4,4 +4,8 @@ public class ContaPoupanca extends Conta{
         super(agencia, id_conta, titular);
     }
 
+    @Override
+    public void gerarExtrato() {
+        
+    }
 }

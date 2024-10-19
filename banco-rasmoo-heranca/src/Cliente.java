@@ -14,6 +14,7 @@ public class Cliente {
 
     public Cliente(String nome, int cpf) {
         this.nome = nome;
+        this.cpf = cpf;
     }
 
     //encapsulamento-:Getters-Setters
@@ -50,4 +51,13 @@ public class Cliente {
         this.salario = salario;
     }
 
+    @Override
+    public String toString() {
+        return "Cliente{" +
+                "cpf=" + cpf +
+                ", nome='" + nome + '\'' +
+                //", profissao='" + profissao + '\'' +
+               // ", salario=" + salario +
+                '}';
+    }
 }

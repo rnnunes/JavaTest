@@ -1,4 +1,4 @@
-public class Conta {
+public abstract class Conta {
 
         //atributos de classe
 
@@ -29,10 +29,10 @@ public class Conta {
         public boolean sacar(double valor) {
                 if (this.saldo >= valor) {
                         this.saldo -= valor;
-                        System.out.printf("O Saque foi Realizado com Sucesso!");
+                       // System.out.printf("O Saque foi Realizado com Sucesso!");
                         return true;
                 } else {
-                        System.out.printf("Você não tem Saldo o suficiente!");
+                      // System.out.printf("Você não tem Saldo o suficiente!");
                         return false;
                 }
         }
@@ -44,6 +44,9 @@ public class Conta {
                         destino.depositar(valor);
                 }
         }
+
+        public abstract void gerarExtrato();
+
 
         //encapsulamento-:Getters-Setters
 
@@ -81,4 +84,13 @@ public class Conta {
                 return Conta.total;
         }
 
+        @Override
+        public String toString() {
+                return "Conta{" +
+                        "agencia =" + agencia +
+                        ", id_conta = " + id_conta +
+                        ", titular = " + titular +
+                        ", saldo = " + saldo +
+                        '}';
+        }
 }
