@@ -6,6 +6,6 @@ public class ContaPoupanca extends Conta{
 
     @Override
     public void gerarExtrato() {
-        
+        System.out.println("Gerando extrato para Conta Poupança.");
     }
 }

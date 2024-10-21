@@ -14,6 +14,6 @@ public class ContaCorrente extends Conta {
 
     @Override
     public void gerarExtrato() {
-
+        System.out.println("Gerando extrato para Conta Corrente.");
     }
 }
