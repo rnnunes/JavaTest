@@ -26,6 +26,10 @@ public class Produto implements Comparable<Produto>{
         return true;
     }
 
-    //public Comparable
+    @Override
+    public int compareTo(Produto anotherProduto) {
+        return this.nome.compareTo(anotherProduto.getNome());
+    }
+
 
 }
